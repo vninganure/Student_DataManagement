@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Form Page</title>
+        <style>
+                .container{
+                    /*align-content: center;*/
+                    border: 1px solid black;
+                    margin: auto;
+                    width: 40%;
+                    font-size: 20px;
+                    padding: 20px;
+                }
+                #Myform table tr td input{
+                    font-size: 20px;
+                }
+            </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="container">
+            <h1>My form</h1>
+            
+            
+            <form id="Myform" action="RegisterServlet" method="post">
+                <table>
+                    <tr>
+                        <td>Enter Your Full Name: </td>
+                        <td><input type="text" name="user_name" placeholder="Enter Name"/> </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Enter Your address: </td>
+                        <td><input type="text" name="user_address" placeholder="Enter address"/> </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Enter Your Mobile Number: </td>
+                        <td><input type="text" name="user_mobile" placeholder="Enter Mobile"/> </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Enter Your Email: </td>
+                        <td><input type="email" name="user_email" placeholder="Enter email"/> </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Select Gender: </td>
+                        <td><input type="radio" name="user_gender" value="Male"/>Male &nbsp; &nbsp;<input type="radio" name="user_gender" value="Female"/>Female </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            Select your course: 
+                        </td>
+                        <td>
+                            <select name="user_course">
+                                <option value="Java">Java</option>
+                                <option value="Python">Python</option>
+                                <option value="C++">C++</option>
+                                <option value="Kotlin">Kotlin</option>
+                                <option value="JavaScript">JavaScript</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: right;">
+                            <input type="checkbox" value="checked" name="condition" />
+                        </td>
+                        <td>
+                            Terms and Conditions.
+                        </td>
+                        
+                    </tr>                    
+                    <tr>
+                        <td>
+                            
+                        </td>
+                        <td>
+                            <button type="submit">Register</button>
+                            <button type="reset">reset</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>
