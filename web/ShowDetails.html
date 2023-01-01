@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>remove Student details </title>
+        <style>
+                .container{
+                    /*align-content: center;*/
+                    border: 1px solid black;
+                    margin: auto;
+                    width: 40%;
+                    font-size: 20px;
+                    padding: 20px;
+                }
+                #StudentDetails table tr td input{
+                    font-size: 20px;
+                }
+            </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Delete Student</h1>
+            
+            
+            <form id="StudentDetails" action="RegisterServlet" method="post">
+                <table>
+                    <tr>
+                        <td>Enter Your the student id: </td>
+                        <td><input type="text" name="student_id" placeholder="Enter Id"/> </td>
+                    </tr>
+                                        
+                    <tr>
+                        <td>
+                            
+                        </td>
+                        <td>
+                            <button type="submit" name="action" value="show_details">submit</button>    
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>
